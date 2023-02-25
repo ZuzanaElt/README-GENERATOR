@@ -5,6 +5,12 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 
 
+
+
+
+
+
+
 // array of questions for user
 inquirer
   .prompt([
@@ -66,87 +72,63 @@ inquirer
   .then(answers => {
     //deconstructiong answers
     const {title, description,contents,installation, usage,githubUserName,githubLink, email,licence,contributing, tests} = answers;
-    
-    const infoHTML =
-    `
-    <!DOCTYPE html>
-    <html lang="en-gb">
-    
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">  
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    const READMEcontent =
+`          
+      <h2>  # ${title.toUpperCase()} <h2>  LicenceLogo
 
-    <link href="./style/css"  rel="stylesheet" type="text/css">
-
-      <title>README-file generator</title>
-    </head>
-    
-    <body class=container-fluid>
-    <div class="jumbotron jumbotron-fluid container" >
-            <h1 class="project-title display-4">${title}</h1>
-            <p class=logo>licence logo<p>
-            <hr>
-        </div>
-        <div>
-            <h2>DESCRIPTION</h2>
-            <p class="description">${description}</p>
-        </div>
-        <div>
-            <h2 id="table-of-contents">Table of Contents</h2>
-            <ul class="contents-table">
-                <li><a href="#install">Installation</a></li>
-                <li><a href="#usage">Usage</a></li>
-                <li><a href="#licence">Licence</a></li>
-                <li><a href="#contributing">Contributing</a></li>
-                <li><a href="#tests">Tests</a></li>
-                <li><a href="#questions">Questions</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2 id="install">Installation</h2>
-            <p class="#">${installation}</p>
-        </div>
-        <div>
-            <h2 id="usage">Usage</h2>
-            <p class="#">${usage}</p>
-        </div>
-        
-        <div>
-            <h2 id="licence">License</h2>
-            <p class="#">${licence}</p>
-        </div>
-        <div>
-            <h2 id="contributing">Contributing</h2>
-            <p class="#">${contributing}</p>
-        </div>
-        <div>
-            <h2 id="tests">Tests</h2>
-            <p class="#">${tests}</p>
-        </div>
-        <div>
-            <h2 id="questions">Questions</h2>
-            <p class="#">If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:</p>
-
-            <p id="githubLink">${githubUserName} : ${githubLink}</p>
-            <p id="email">${email}</p>
-        </div>
-        
-    </body>
-    
-    </html>
-    `;
-    
-    //creates html file
-    fs.writeFile(`index.html`, infoHTML , (error) => { // or JSON.stringify(answers)
-      return error
-        ? console.error(error)
-        : console.log('Write File Operation Success!');
-    })
+        ---
        
-})
+        DESCRIPTION
+        ## ${description}
+
+      > ## Table of Contents
+
+     > - Installation
+     > - Usage
+     > - Licence
+     > - Contributing
+     > - Tests
+     > - Questions
+
+        ## Installation
+        ${installation}
+
+        ## Usage
+        ${usage}
+
+        ## License
+        ${licence}
+
+        ##Contributing
+        ${contributing}
+
+        ## Tests
+        ${tests}
+            
+        ## Questions
+        If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+
+        Github link: <github.com/  ${githubUserName} >
+        Contact email: <${email} >
+`
+    
+
+
+fs.writeFile('testREADME.md', READMEcontent , (error) => { //or JSON.stringify(answers)
+    return error
+      ? console.error(error)
+      : console.log('Write File Operation Success!');
+  })
+   
+}) 
+// function to write README file
+function writeFile(filename,data){
+        
+    }
+   
+       
+
 
 // function to initialize program
 function init() {
