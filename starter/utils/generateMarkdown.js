@@ -44,7 +44,8 @@ Contact email: ${answers.email}
 
 
 ## License
-This application is covered under ${answers.licence} licence.
+This application is covered under ${answers.licence} licence. 
+To learn more about licences including this one visit https://choosealicense.com/
 `; 
 }
 
