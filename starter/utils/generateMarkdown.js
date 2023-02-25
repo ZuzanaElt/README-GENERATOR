@@ -1,45 +1,48 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
-  
-`# ${title}
---------------------------------------------
-const READMEcontent =
+  return `
+ 
+         
+# ${answers.title.toUpperCase()}   LicenceLogo
 
-${title}            Logo licence
-DESCRIPTION
-${description}
+---
+       
+        
+## DESCRIPTION
+${answers.description}
 
-Table of Contents
-Installation
-Usage
-Licence
-Contributing
-Tests
-Questions
+>## Table of Contents
 
-Installation
-${installation}
+> * [Installation](#depencencies)
+> * [Usage](#usage)
+> * [Licence](#licence)
+> * [Contributing](#contributing)
+> * [Tests](#tests)
+> * [Questions](#questions)
 
-Usage
-${usage}
-License
-${licence}
 
-${contributing}
+## Installation
+  ${answers.installation}
 
-Tests
-${tests}
+## Usage
+  ${answers.usage}
+
+## License
+  ${answers.licence}
+
+## Contributing
+  ${answers.contributing}
+
+## Tests
+  ${answers.tests}
+            
+## Questions
+    If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+
+Github link: <github.com/  ${answers.githubUserName} >
+Contact email: <${answers.email} >
+`;
     
-Questions
-If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
-
-${githubUserName} : ${githubLink}
-${email}
-
-
-`
-return
-
 }
 
 module.exports = generateMarkdown;
