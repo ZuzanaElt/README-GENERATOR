@@ -20,11 +20,14 @@
 -----
 
 ## Installation
-  
+   The process of using the generator is very simple. After downloading the generator to your VS Code, ensure that you navigate into the newly downloaded file. Once there open your command-line application and open node terminal. Type node index.js
 
 
 ## Usage
-  The process of using the generator is very simple. After downloading the generator to your VS Code, ensure that you navigate into the newly downloaded file. Once there open your command-line application and open node terminal. Type node index.js
+   The generator can be used to generate skeleton of README file. This can be subsequently filled in directly in the newly created file.
+   It can also be fully prepared directly in the comman-line terminal following prompts and answering all the questions.
+
+ 
 
 
 ## Contribution guidelines
