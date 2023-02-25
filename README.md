@@ -1,41 +1,45 @@
+     
+# ;LKA   ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
- 
-         
-# AAAA   LicenceLogo
-
----
+-----
        
         
 ## DESCRIPTION
-bbbb
+asdf
 
->## Table of Contents
+## Table of Contents
 
-> * [Installation](#depencencies)
-> * [Usage](#usage)
-> * [Licence](#licence)
-> * [Contributing](#contributing)
-> * [Tests](#tests)
-> * [Questions](#questions)
+ * [Installation](#depencencies)
+ * [Usage](#usage)
+ * [Contribution guidelines](#contributing)
+ * [Test instructions](#tests)
+ * [Questions](#questions)
+ * [Licence](#licence)
 
+
+-----
 
 ## Installation
-  eee
+  undefined
+
 
 ## Usage
-  d
+  undefined
 
-## License
-  MIT Licence
 
-## Contributing
-  hhhh
+## Contribution guidelines
+  undefined
 
-## Tests
-  iiii
+
+## Test instructions
+  undefined
+
             
 ## Questions
-    If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+Github link: [github.com/undefined](https://https://github.com/undefined)
+Contact email: undefined 
 
-Github link: <github.com/  fff >
-Contact email: <hh >
+
+## License
+This application is covered under Apache Licence 2.0 licence.

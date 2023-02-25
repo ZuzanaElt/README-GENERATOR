@@ -1,48 +1,51 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
-  return `
- 
-         
-# ${answers.title.toUpperCase()}   LicenceLogo
+  return`     
+# ${answers.title.toUpperCase()}   ${answers.badge}
 
----
+-----
        
         
 ## DESCRIPTION
 ${answers.description}
 
->## Table of Contents
+## Table of Contents
 
-> * [Installation](#depencencies)
-> * [Usage](#usage)
-> * [Licence](#licence)
-> * [Contributing](#contributing)
-> * [Tests](#tests)
-> * [Questions](#questions)
+ * [Installation](#depencencies)
+ * [Usage](#usage)
+ * [Contribution guidelines](#contributing)
+ * [Test instructions](#tests)
+ * [Questions](#questions)
+ * [Licence](#licence)
 
+
+-----
 
 ## Installation
   ${answers.installation}
 
+
 ## Usage
   ${answers.usage}
 
-## License
-  ${answers.licence}
 
-## Contributing
+## Contribution guidelines
   ${answers.contributing}
 
-## Tests
+
+## Test instructions
   ${answers.tests}
+
             
 ## Questions
-    If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+If you have any additional questions not answered here or wish to get in touch regarding developments, you can use the following links:
+Github link: [github.com/${answers.githubUserName}](https://https://github.com/${answers.githubUserName})
+Contact email: ${answers.email} 
 
-Github link: <github.com/  ${answers.githubUserName} >
-Contact email: <${answers.email} >
-`;
-    
+
+## License
+This application is covered under ${answers.licence} licence.
+`; 
 }
 
 module.exports = generateMarkdown;
