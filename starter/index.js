@@ -38,7 +38,7 @@ function init() {
             };
              const readmeTemplate = generateMarkdown(answers);
             // function to write README file
-            fs.writeFile("../`${answers.title}`-README.md", readmeTemplate , (error) => { 
+            fs.writeFile('../README.md', readmeTemplate , (error) => { 
                 return error
                 ? console.error(error)
                 : console.log('Your README file is now generated');
