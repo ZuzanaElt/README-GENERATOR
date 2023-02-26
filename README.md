@@ -56,6 +56,7 @@ Contact email: zuzanaeltom@gmail.com
 This application is covered under MIT Licence licence. 
 To learn more about licences including this one visit https://choosealicense.com/
 
-## Screenshots
+## Screenshots and video
 ![git-bash-flow](screenshots/git-bash-flow.png)
 ![test README page](screenshots/Test-page%20screenshot.png)
+walktrough video can be found on the following link: https://drive.google.com/file/d/1XJhgt5SxpR42tWu0Dnh_E498FjvYEvBT/view
