@@ -1,8 +1,7 @@
      
 # README GENERATOR   
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
------   
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
         
 ## DESCRIPTION
 Using this generator your README file will always look professional. You will be able to add all the important information in, ensuring that your project can be understood and used correctly.
@@ -59,4 +58,6 @@ To learn more about licences including this one visit https://choosealicense.com
 ## Screenshots and video
 ![git-bash-flow](screenshots/git-bash-flow.png)
 ![test README page](screenshots/Test-page%20screenshot.png)
-walktrough video can be found on the following link: https://drive.google.com/file/d/1XJhgt5SxpR42tWu0Dnh_E498FjvYEvBT/view
+---
+walktrough video can be found on the following link: 
+https://drive.google.com/file/d/1XJhgt5SxpR42tWu0Dnh_E498FjvYEvBT/view
