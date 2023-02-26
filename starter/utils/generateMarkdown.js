@@ -1,10 +1,10 @@
 // function to generate markdown for README
 function generateMarkdown(answers) {
   return`     
-# ${answers.title.toUpperCase()}   ${answers.badge}
+# ${answers.title.toUpperCase()}   
 
------
-       
+${answers.badge}
+-----   
         
 ## DESCRIPTION
 ${answers.description}
@@ -46,7 +46,10 @@ Contact email: ${answers.email}
 ## License
 This application is covered under ${answers.licence} licence. 
 To learn more about licences including this one visit https://choosealicense.com/
+
+## Screenshots
 `; 
+
 }
 
 module.exports = generateMarkdown;
