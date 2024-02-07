@@ -32,7 +32,7 @@ Using this generator your README file will always look professional. You will be
   4. respond to prompts that are displayed
   5. once you complete responding the README file is generated. The file can be amended or added to as usual. 
   6. Don't forget to move the file to your new-project repository
-  7. BEWARE each time you generate the README file - old version stored in this folder will be overwritten
+  7. !!!! BEWARE each time you generate the README file - old version stored in this folder will be overwritten
   8. PS this README was generated using this generator 😊
 
 
